@@ -5,7 +5,7 @@ exports.parse = function parse (input) {
   const lines = input.split(/\r?\n/g).map(l => l.trim())
 
   let currentDate = null
-  let entries = []
+  const entries = []
 
   for (const line of lines) {
     if (line === '') continue
