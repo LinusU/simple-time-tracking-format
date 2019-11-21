@@ -38,7 +38,7 @@ exports.parse = function parse (input) {
       continue
     }
 
-    throw new Error('Got malformed line')
+    throw new Error(`Got malformed line: ${line}`)
   }
 
   return entries
